@@ -5,7 +5,7 @@ const AuthPage = (props) => {
         e.preventDefault();
         const { value } = e.target[0];
         axios.post(
-            'http://localhost:3001/authenticate',
+            'https://chata-app.onrender.com//authenticate',
             { username: value }
         )
         props.onAuth({ username: value, secret: value })
